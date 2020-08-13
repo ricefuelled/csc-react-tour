@@ -20,7 +20,7 @@ class Step extends Component {
   render() {
     const steps = [
       {
-        selector: '',
+        selector: '.step-1',
         content: () => (
           <div>
             <h2>Hello!</h2>
@@ -39,15 +39,16 @@ class Step extends Component {
                 </div>                  
               </ol>
             </div>            
-            <div>
+            <div className="img-center">
               <Img src={smilingstar} constrain="cover" width="50%"/>
             </div>
+            <p>Teacher Tour</p>
           </div>
         ),
         position: 'left', 
       },
       {
-        selector: '',
+        selector: '.step-2',
         content: () => (
           <div>
             <h2>Set Up Your Notifications</h2>
@@ -58,12 +59,12 @@ class Step extends Component {
             <div className = "embedded-video">
               <ReactPlayer url = "https://vimeo.com/43397960" width = "100%"/>
             </div>
+            <p>1 of 3</p>
           </div>
         ),
-        position: 'left', 
       },
       {
-        selector: '',
+        selector: '.step-3',
         content: () => (
           <div>
             <h2>Get Your Content Quickly</h2>
@@ -74,12 +75,12 @@ class Step extends Component {
             <div className = "embedded-video">
               <ReactPlayer url = "https://vimeo.com/94486699" width = "100%"/>
             </div>
+            <p>2 of 3</p>
           </div>
         ),
-        position: 'left', 
       },
       {
-        selector: '',
+        selector: '.step-4',
         content: () => (
           <div>
             <h2>Learn More about Video Conferencing.</h2>
@@ -88,16 +89,16 @@ class Step extends Component {
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit vel est nec lobortis.</p>     
             <div className="small-tab">
-              <ol>
+              <ul>
                 <li><a href = "https://community.canvaslms.com/">Zoom</a></li>
                 <li><a href = "https://community.canvaslms.com/">Google Meet</a></li>
                 <li><a href = "https://community.canvaslms.com/">Microsoft Teams</a></li>
                 <li><a href = "https://community.canvaslms.com/">More Video Conferencing Tools</a></li>
-              </ol>
+              </ul>
             </div>
+            <p>3 of 3</p>
           </div>
         ),
-        position: 'left', 
       }
     ];
 

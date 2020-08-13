@@ -20,7 +20,7 @@ import Step from './components/Step'
 //import Popup from './components/Popup'
 import {connect} from 'react-redux'
 import {} from './actions'
-import {isTourOpenReducer} from './reducers'
+//import {isTourOpenReducer} from './reducers'
 
 class App extends React.Component {
   state = {
@@ -82,22 +82,25 @@ class App extends React.Component {
             label={<ScreenReaderContent>Home</ScreenReaderContent>}
             href="#"
           />
-          <Navigation.Item
+          <div className="step-2">
+            <Navigation.Item
             icon={<Avatar name="Thai Chuong" size="x-small" />}
             label="Account"
             onClick={() => {
             this.setState({ endOpen: !this.state.endOpen });
             }}
           />
+          </div>          
           <Navigation.Item icon={<IconAdminLine />} label="Admin" href="#" />
-          <Navigation.Item
+          <div className="step-1">
+            <Navigation.Item
             icon={<IconDashboardLine />}
             label="Dashboard"
             href="#"
           />
-          <div className="tour-2">
+          </div>          
+          <div className="step-3">
             <Navigation.Item
-            selected
             icon={<IconCoursesLine />}
             label="Courses"
             href="#"
@@ -113,11 +116,13 @@ class App extends React.Component {
             label="Commons"
             href="#"
           />
-          <Navigation.Item
+          <div className="step-4">
+            <Navigation.Item
             icon={<IconQuestionLine />}
             label="Help"
             href="#"
           />
+          </div>          
           </Navigation>
         </DrawerLayout>
         <div>
