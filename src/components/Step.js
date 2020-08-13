@@ -23,7 +23,7 @@ class Step extends Component {
         selector: '.step-1',
         content: () => (
           <div>
-            <h2>Hello!</h2>
+            <h2>Chao thay co!</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit vel est nec lobortis. Fusce vestibulum placerat nisl a venenatis.</p>
             <div>
               <ol className="small-tab">
@@ -42,7 +42,9 @@ class Step extends Component {
             <div className="img-center">
               <Img src={smilingstar} constrain="cover" width="50%"/>
             </div>
-            <p>Teacher Tour</p>
+            <div className="bottom-toc">              
+              <p>Teacher Tour</p>
+            </div>
           </div>
         ),
         position: 'left', 
@@ -57,9 +59,11 @@ class Step extends Component {
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit vel est nec lobortis.</p>
             <div className = "embedded-video">
-              <ReactPlayer url = "https://vimeo.com/43397960" width = "100%"/>
+              <ReactPlayer url = "https://www.youtube.com/watch?v=ezbJwaLmOeM" width = "100%"/>
             </div>
-            <p>1 of 3</p>
+            <div className="bottom-toc">              
+              <p>1 of 3</p>
+            </div>
           </div>
         ),
       },
@@ -73,9 +77,11 @@ class Step extends Component {
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit vel est nec lobortis.</p>      
             <div className = "embedded-video">
-              <ReactPlayer url = "https://vimeo.com/94486699" width = "100%"/>
+              <ReactPlayer url = "https://www.youtube.com/watch?v=SjRufr1AR_o" width = "100%"/>
             </div>
-            <p>2 of 3</p>
+            <div className="bottom-toc">              
+              <p>2 of 3</p>
+            </div>
           </div>
         ),
       },
@@ -96,7 +102,9 @@ class Step extends Component {
                 <li><a href = "https://community.canvaslms.com/">More Video Conferencing Tools</a></li>
               </ul>
             </div>
-            <p>3 of 3</p>
+            <div className="bottom-toc">              
+              <p>3 of 3</p>
+            </div>
           </div>
         ),
       }

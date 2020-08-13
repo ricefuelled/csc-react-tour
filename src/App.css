@@ -38,3 +38,8 @@
   margin-bottom: 0;
   padding: 0;
 }
+
+.bottom-toc {
+  font-size: 8;
+  color: rgb(151, 166, 168);
+}
