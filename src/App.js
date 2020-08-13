@@ -17,6 +17,7 @@ import { View } from "@instructure/ui-view";
 import { DrawerLayout } from "@instructure/ui-drawer-layout";
 import { CloseButton } from "@instructure/ui-buttons";
 import Step from './components/Step'
+import Board from './components/Board'
 //import Popup from './components/Popup'
 import {connect} from 'react-redux'
 import {} from './actions'
@@ -122,8 +123,12 @@ class App extends React.Component {
             label="Help"
             href="#"
           />
-          </div>          
+          </div>      
+            
           </Navigation>
+          <div>
+            <Board/>
+          </div>            
         </DrawerLayout>
         <div>
           <Step/>

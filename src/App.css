@@ -43,3 +43,50 @@
   font-size: 8;
   color: rgb(151, 166, 168);
 }
+
+.board-wrap {
+  font-family: sans-serif;
+  color: #5a5555;
+  position: absolute;
+  top:0;
+  left:0;
+  margin-top: 2%;
+  margin-left: 10%;
+  width: 85%;
+  height: 95%;
+}
+
+.course-list-wrap{
+  top:0;
+  left:0;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+.course-list {
+  margin: 2%;
+}
+
+.title-wrap {
+  margin: 2%
+}
+
+.course-box {
+  color: #ffffff;
+  width: 35%;
+  background-color: #2d3b45;
+  border-radius: 5px;
+  padding-top: 15%;
+  padding-bottom: 2%;
+  text-align: center;
+  font-style: italic bold;
+  font-size: 30;
+  margin: 0 36px 36px 0;
+}
+
+.courses-box-list {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
